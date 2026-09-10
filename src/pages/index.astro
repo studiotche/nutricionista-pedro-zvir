@@ -240,24 +240,29 @@ const jsonLd = {
           {
             specialties.map((specialty) => (
               <article class="service-card">
-                <>
+                <div class="service-card-top">
+                  <img
+                    class="service-icon"
+                    src={asset(specialty.icon)}
+                    alt=""
+                    width="56"
+                    height="56"
+                  />
                   <span class="service-number">{specialty.number}</span>
-                  <div>
-                    <>
-                      <h3>{specialty.title}</h3>
-                      <p>{specialty.text}</p>
-                      <p>{specialty.detail}</p>
-                    </>
-                  </div>
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`Saber mais sobre ${specialty.title.toLowerCase()}`}
-                  >
-                    Saber mais <span aria-hidden="true">↗</span>
-                  </a>
-                </>
+                </div>
+                <div class="service-card-body">
+                  <h3>{specialty.title}</h3>
+                  <p>{specialty.text}</p>
+                </div>
+                <a
+                  class="service-card-link"
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Saber mais sobre ${specialty.title.toLowerCase()}`}
+                >
+                  Saiba mais <span aria-hidden="true">→</span>
+                </a>
               </article>
             ))
           }

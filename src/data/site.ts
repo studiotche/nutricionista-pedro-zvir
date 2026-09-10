@@ -68,6 +68,7 @@ export const site = {
 export const specialties = [
   {
     number: "01",
+    icon: "/images/corrida.svg",
     title: "Nutri\u00e7\u00e3o esportiva",
     text: "Estrat\u00e9gias para apoiar seus treinos, sua recupera\u00e7\u00e3o e seu desempenho, sempre de acordo com sua rotina.",
     detail:
@@ -75,6 +76,7 @@ export const specialties = [
   },
   {
     number: "02",
+    icon: "/images/maca.svg",
     title: "Nutri\u00e7\u00e3o est\u00e9tica",
     text: "Acompanhamento para melhorar a composi\u00e7\u00e3o corporal com metas realistas e uma alimenta\u00e7\u00e3o poss\u00edvel de sustentar.",
     detail:
@@ -82,6 +84,7 @@ export const specialties = [
   },
   {
     number: "03",
+    icon: "/images/crescimento-de-lucro.svg",
     title: "Emagrecimento",
     text: "Orienta\u00e7\u00e3o individualizada para reduzir gordura sem dietas imposs\u00edveis de manter ou estrat\u00e9gias extremas.",
     detail:
