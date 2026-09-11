@@ -1361,7 +1361,11 @@ summary:focus-visible {
   grid-template-columns: 1.1fr .7fr;
   gap: 80px;
   align-items: center;
-  background: var(--terracotta-deep) url('/images/nutricionista-fundo-sessao-agende.webp') center / cover no-repeat;
+  background-color: var(--terracotta-deep);
+  background-image: linear-gradient(rgba(129, 80, 42, .7), rgba(129, 80, 42, .7)), url('/images/nutricionista-fundo-sessao-agende.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 4px;
   color: var(--white);
   padding: clamp(46px, 7vw, 86px);
