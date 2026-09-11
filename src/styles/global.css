@@ -1362,7 +1362,7 @@ summary:focus-visible {
   gap: 80px;
   align-items: center;
   background-color: var(--terracotta-deep);
-  background-image: linear-gradient(rgba(129, 80, 42, .7), rgba(129, 80, 42, .7)), url('/images/nutricionista-fundo-sessao-agende.webp');
+  background-image: linear-gradient(rgba(129, 80, 42, .9), rgba(129, 80, 42, .9)), url('/images/nutricionista-fundo-sessao-agende.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
