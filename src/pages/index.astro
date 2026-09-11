@@ -298,17 +298,22 @@ const jsonLd = {
         </div>
         <ol class="steps-list">
           {
-            pillars.map(([title, text], index) => (
-              <li>
-                <>
-                  <span>0{index + 1}</span>
-                  <div>
-                    <>
-                      <h3>{title}</h3>
-                      <p>{text}</p>
-                    </>
-                  </div>
-                </>
+            pillars.map((pillar) => (
+              <li class="step-item">
+                <div class="step-icon-badge" aria-hidden="true">
+                  <img
+                    class="step-icon"
+                    src={asset(pillar.icon)}
+                    alt=""
+                    width="32"
+                    height="32"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="step-content">
+                  <h3>{pillar.title}</h3>
+                  <p>{pillar.text}</p>
+                </div>
               </li>
             ))
           }

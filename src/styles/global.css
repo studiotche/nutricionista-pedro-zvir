@@ -548,6 +548,7 @@ summary:focus-visible {
   box-shadow: 0 16px 45px rgba(23, 21, 16, .14);
   padding: 20px 23px;
   border-left: 4px solid var(--terracotta);
+  border-radius: 4px;
 }
 
 .floating-card span,
@@ -641,11 +642,13 @@ summary:focus-visible {
   inset: 30px auto -26px 0;
   width: 74%;
   border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 4px;
 }
 
 .about-frame {
   position: relative;
   aspect-ratio: 704 / 1139;
+  border-radius: 4px;
   box-shadow: var(--shadow);
 }
 
@@ -880,34 +883,63 @@ summary:focus-visible {
   padding: 0;
 }
 
-.steps-list li {
-  display: grid;
-  grid-template-columns: 62px 1fr;
-  gap: 24px;
-  padding: 34px 0;
-  border-top: 1px solid rgba(23, 21, 16, .2);
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
 }
 
-.steps-list li:last-child {
-  border-bottom: 1px solid rgba(23, 21, 16, .2);
+.step-item:last-child {
+  border-bottom: none;
 }
 
-.steps-list>li>span {
-  color: var(--terracotta);
+.step-icon-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0 4px 18px rgba(23, 21, 16, 0.06);
+  flex-shrink: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.step-item:hover .step-icon-badge {
+  transform: scale(1.04);
+  box-shadow: 0 6px 22px rgba(23, 21, 16, 0.1);
+}
+
+.step-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+.step-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.step-content h3 {
+  margin: 0 0 6px;
   font-family: var(--serif);
-  font-size: 1.15rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--sage-dark);
+  line-height: 1.2;
 }
 
-.steps-list h3 {
-  margin: 0 0 7px;
-  font-family: var(--serif);
-  font-size: 1.7rem;
-  font-weight: 400;
-}
-
-.steps-list p {
+.step-content p {
   margin: 0;
   color: var(--muted);
+  font-family: var(--sans);
+  font-size: 1.02rem;
+  line-height: 1.55;
 }
 
 .testimonials-section {
@@ -1953,8 +1985,32 @@ body.menu-open {
     position: static;
   }
 
-  .process-section {
-    display: none;
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .step-item {
+    gap: 20px;
+    padding: 24px 0;
+  }
+
+  .step-icon-badge {
+    width: 62px;
+    height: 62px;
+  }
+
+  .step-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .step-content h3 {
+    font-size: 1.45rem;
+  }
+
+  .step-content p {
+    font-size: 0.98rem;
   }
 
   .testimonial-grid {
@@ -2095,9 +2151,19 @@ body.menu-open {
     grid-template-columns: 1fr;
   }
 
-  .steps-list li {
-    grid-template-columns: 45px 1fr;
-    gap: 13px;
+  .step-item {
+    gap: 16px;
+    padding: 20px 0;
+  }
+
+  .step-icon-badge {
+    width: 52px;
+    height: 52px;
+  }
+
+  .step-icon {
+    width: 24px;
+    height: 24px;
   }
 
   .section h2,
@@ -2110,7 +2176,12 @@ body.menu-open {
     font-size: 1.45rem;
   }
 
-  .steps-list h3 {
+  .step-content h3 {
     font-size: 1.3rem;
+  }
+
+  .step-content p {
+    font-size: 0.92rem;
+    line-height: 1.5;
   }
 }

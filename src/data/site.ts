@@ -93,18 +93,21 @@ export const specialties = [
 ] as const;
 
 export const pillars = [
-  [
-    "Avaliar",
-    "Entender sua rotina, seus objetivos, prefer\u00eancias alimentares, composi\u00e7\u00e3o corporal, exerc\u00edcios e exames.",
-  ],
-  [
-    "Planejar",
-    "Construir estrat\u00e9gias nutricionais individualizadas, pr\u00e1ticas e adequadas \u00e0s necessidades de cada pessoa.",
-  ],
-  [
-    "Acompanhar",
-    "Orientar, acompanhar e ajustar o plano ao longo do processo para favorecer consist\u00eancia e autonomia.",
-  ],
+  {
+    title: "Avaliar",
+    text: "Entender sua hist\u00f3ria, seus h\u00e1bitos, prefer\u00eancias e objetivos com uma avalia\u00e7\u00e3o completa e individualizada.",
+    icon: "/images/pagina.svg",
+  },
+  {
+    title: "Planejar",
+    text: "Criar um plano alimentar realista, ajustado \u00e0 sua rotina e \u00e0s suas necessidades, com base em evid\u00eancias.",
+    icon: "/images/alvo.svg",
+  },
+  {
+    title: "Acompanhar",
+    text: "Estar ao seu lado em todas as etapas, com suporte cont\u00ednuo para ajustes e melhores resultados.",
+    icon: "/images/pessoas.svg",
+  },
 ] as const;
 
 // Depoimentos reais coletados do Google (perfil: 5,0 estrelas \u00b7 3 depoimentos exibidos; perfil com 5 avalia\u00e7\u00f5es).
