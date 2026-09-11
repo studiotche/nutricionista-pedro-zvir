@@ -227,7 +227,7 @@ a {
   font-weight: 600;
   cursor: pointer;
   will-change: transform;
-  transition: transform .28s cubic-bezier(.22, .61, .36, 1), background .28s cubic-bezier(.22, .61, .36, 1), color .25s ease, border-color .28s ease;
+  transition: transform .28s cubic-bezier(.22, .61, .36, 1), translate .28s cubic-bezier(.22, .61, .36, 1), background .28s cubic-bezier(.22, .61, .36, 1), color .25s ease, border-color .28s ease;
 }
 
 .button:hover {
@@ -477,6 +477,7 @@ summary:focus-visible {
 
 .hero .button:hover {
   transform: translateY(-3px);
+  translate: 0 -3px;
   background: var(--sage);
   border-color: var(--sage);
 }
