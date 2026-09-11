@@ -185,7 +185,7 @@ a {
   flex-direction: column;
   gap: 6px;
   border: 1px solid var(--line);
-  border-radius: 3px;
+  border-radius: 4px;
   background: #fff;
   cursor: pointer;
   padding: 0;
@@ -221,7 +221,7 @@ a {
   background: var(--sage);
   color: var(--white);
   padding: 0 24px;
-  border-radius: 8px;
+  border-radius: 4px;
   font-family: var(--display);
   font-size: .92rem;
   font-weight: 600;
@@ -526,6 +526,7 @@ summary:focus-visible {
 
 .image-frame {
   overflow: hidden;
+  border-radius: 4px;
   background: var(--sage-tint);
 }
 
@@ -769,7 +770,7 @@ summary:focus-visible {
   flex-direction: column;
   padding: 32px 34px 30px;
   border: 1px solid rgba(23, 21, 16, .11);
-  border-radius: 8px;
+  border-radius: 4px;
   background: var(--paper);
 }
 
@@ -1078,7 +1079,7 @@ summary:focus-visible {
   margin: 0;
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 4px;
   background: var(--paper);
 }
 
@@ -1153,7 +1154,7 @@ summary:focus-visible {
   flex-direction: column;
   justify-content: center;
   border: 1px solid var(--line);
-  border-radius: 5px;
+  border-radius: 4px;
   background: var(--paper);
 }
 
@@ -1222,7 +1223,7 @@ summary:focus-visible {
   cursor: pointer;
   list-style: none;
   padding: 25px 20px;
-  border-radius: 6px;
+  border-radius: 4px;
   font-family: var(--display);
   font-weight: 600;
   transition: color .3s ease, background .3s ease, padding-left .3s cubic-bezier(.22, .61, .36, 1);
@@ -1309,6 +1310,7 @@ summary:focus-visible {
   gap: 80px;
   align-items: center;
   background: var(--terracotta-deep);
+  border-radius: 4px;
   color: var(--white);
   padding: clamp(46px, 7vw, 86px);
 }
@@ -1408,7 +1410,7 @@ summary:focus-visible {
 
 .map-frame {
   aspect-ratio: 4 / 3;
-  border-radius: 5px;
+  border-radius: 4px;
   overflow: hidden;
   background: var(--sage-tint);
 }
@@ -1666,7 +1668,7 @@ body.menu-open {
   display: grid;
   place-items: center;
   border: 1px solid var(--line);
-  border-radius: 3px;
+  border-radius: 4px;
   background: transparent;
   color: var(--ink);
   font-size: 1.05rem;
