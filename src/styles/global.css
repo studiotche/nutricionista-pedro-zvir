@@ -476,6 +476,7 @@ summary:focus-visible {
 }
 
 .hero .button:hover {
+  transform: translateY(-3px);
   background: var(--sage);
   border-color: var(--sage);
 }
