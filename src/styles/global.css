@@ -1531,7 +1531,7 @@ summary:focus-visible {
   gap: 8px clamp(16px, 2vw, 30px);
   color: var(--ink);
   font-size: .85rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .footer-nav a {
