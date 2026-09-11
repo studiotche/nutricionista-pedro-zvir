@@ -760,7 +760,7 @@ summary:focus-visible {
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 34px;
+  gap: 17px;
 }
 
 .service-card {
@@ -771,14 +771,6 @@ summary:focus-visible {
   border: 1px solid rgba(23, 21, 16, .11);
   border-radius: 8px;
   background: #ffffff;
-  box-shadow: 0 4px 18px rgba(23, 21, 16, .04);
-  transition: transform .3s cubic-bezier(.22, .61, .36, 1), box-shadow .3s ease, border-color .3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(4, 73, 37, .2);
-  box-shadow: 0 14px 30px rgba(23, 21, 16, .08);
 }
 
 .service-card-top {
@@ -789,8 +781,8 @@ summary:focus-visible {
 }
 
 .service-icon {
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   filter: invert(25%) sepia(22%) saturate(1100%) hue-rotate(96deg) brightness(80%) contrast(100%);
 }
