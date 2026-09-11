@@ -20,7 +20,7 @@ export const site = {
     { days: "S\u00e1bado e domingo", time: "Fechado" },
   ],
   googleProfile:
-    "https://www.google.com/maps/place/Nutricionista+Esportivo+Pedro+Zvir/@-29.6861031,-51.1277926,17z",
+    "https://www.google.com/maps/search/?api=1&query=Nutricionista%20Esportivo%20Pedro%20Zvir&query_place_id=ChIJFQ3sEjlDGZURoNsQvqKNXek",
   googleRating: {
     score: "5,0",
     reviews: 5,
@@ -28,7 +28,7 @@ export const site = {
   mapsEmbedUrl:
     "https://maps.google.com/maps?q=-29.6861031,-51.1277926&z=17&hl=pt-BR&output=embed",
   mapsUrl:
-    "https://www.google.com/maps/place/Nutricionista+Esportivo+Pedro+Zvir/@-29.6861031,-51.1277926,17z",
+    "https://www.google.com/maps/search/?api=1&query=Nutricionista%20Esportivo%20Pedro%20Zvir&query_place_id=ChIJFQ3sEjlDGZURoNsQvqKNXek",
   seo: {
     title: "Pedro Zvir | Nutricionista Esportivo em Novo Hamburgo",
     description:

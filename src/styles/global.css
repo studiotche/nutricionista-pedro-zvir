@@ -985,7 +985,7 @@ summary:focus-visible {
   margin: 0 0 16px;
   padding: 10px 16px;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 4px;
   background: rgba(255, 255, 255, .5);
   transition: border-color .28s ease, background .3s ease, transform .3s cubic-bezier(.22, .61, .36, 1);
 }
@@ -1361,7 +1361,7 @@ summary:focus-visible {
   grid-template-columns: 1.1fr .7fr;
   gap: 80px;
   align-items: center;
-  background: var(--terracotta-deep);
+  background: var(--terracotta-deep) url('/images/nutricionista-fundo-sessao-agende.webp') center / cover no-repeat;
   border-radius: 4px;
   color: var(--white);
   padding: clamp(46px, 7vw, 86px);
