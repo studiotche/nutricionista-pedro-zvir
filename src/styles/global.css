@@ -908,7 +908,7 @@ summary:focus-visible {
 }
 
 .testimonials-section {
-  background: #ffffff;
+  background: var(--paper);
 }
 
 .testimonial-heading {
@@ -984,7 +984,7 @@ summary:focus-visible {
   flex-direction: column;
   margin: 0;
   padding: 22px 24px 20px;
-  background: var(--paper);
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 4px;
 }
