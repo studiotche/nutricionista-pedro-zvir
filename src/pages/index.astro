@@ -600,20 +600,38 @@ const jsonLd = {
           width="205"
           height="65"
         />
-
         <p>
           Mais saúde, performance e qualidade de vida.
         </p>
-
       </div>
-      <nav class="footer-nav" aria-label="Navegacao do rodape">
-        <a href="#atendimentos">Serviços</a>
-        <a href="#depoimentos">Depoimentos</a>
-        <a href="#locais">Local</a>
-        <a href="#duvidas">FAQ</a>
-        <a href="#sobre">Sobre</a>
-      </nav>
-      <div class="footer-links">
+
+      <div class="footer-column">
+        <h4 class="footer-column-title">Serviços</h4>
+        <nav class="footer-nav footer-nav-vertical" aria-label="Serviços">
+          <a href="#atendimentos">Nutrição esportiva</a>
+          <a href="#atendimentos">Nutrição estética</a>
+          <a href="#atendimentos">Emagrecimento</a>
+        </nav>
+      </div>
+
+      <div class="footer-column">
+        <h4 class="footer-column-title">Navegação</h4>
+        <nav class="footer-nav footer-nav-vertical" aria-label="Navegação do rodapé">
+          <a href="#atendimentos">Serviços</a>
+          <a href="#metodo">Como funciona</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#sobre">Sobre mim</a>
+          <a href="#locais">Local</a>
+          <a href="#duvidas">FAQ</a>
+        </nav>
+      </div>
+
+      <div class="footer-column footer-contact">
+        <h4 class="footer-column-title">Contato</h4>
+        <p class="footer-address">
+          <strong>Local:</strong> {locations[0].address}<br />
+          {locations[0].city}/{site.state}
+        </p>
         <div class="social-links" aria-label="Perfis online">
           <a href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram">
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -636,19 +654,24 @@ const jsonLd = {
             <span class="social-letter" aria-hidden="true">D</span>
           </a>
         </div>
+        <div class="footer-hours">
+          {site.hours.map((h) => (
+            <span>{h.days}: {h.time}</span>
+          ))}
+        </div>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span
-        >© {new Date().getFullYear()}
-        {site.name} · {site.fullRole} · {site.crn}</span
-      ><span class="footer-credit"
-        >Desenvolvido por
-        <a href="https://jeankist.com" target="_blank" rel="noreferrer"
-          >Jean Kist</a
-        >
-        ©</span
-      >
+      <span>© {new Date().getFullYear()} {site.name} · {site.fullRole} · {site.crn}</span>
+      <span class="footer-credit">
+        Desenvolvido por
+        <a href="https://jeankist.com" target="_blank" rel="noreferrer">Jean Kist</a>
+        ©
+      </span>
+      <span class="footer-legal">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </span>
     </div>
   </footer>
   <a
