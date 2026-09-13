@@ -374,30 +374,30 @@ summary:focus-visible {
 .hero-copy.hero-reveal-ready>.location-note,
 .hero-copy.hero-reveal-ready .hero-actions>* {
   opacity: 0;
-  transform: translateY(18px);
-  animation: hero-line-rise .48s cubic-bezier(.22, .61, .36, 1) both;
+  transform: translateY(14px);
+  animation: hero-line-rise .35s cubic-bezier(.22, .61, .36, 1) both;
   animation-delay: var(--hero-delay, 0s);
 }
 
 .hero-copy.hero-reveal-ready .hero-reveal-word {
   display: inline-block;
   opacity: 0;
-  transform: translateY(16px);
-  animation: hero-line-rise .44s cubic-bezier(.22, .61, .36, 1) both;
+  transform: translateY(12px);
+  animation: hero-line-rise .32s cubic-bezier(.22, .61, .36, 1) both;
   animation-delay: var(--hero-delay, 0s);
 }
 
 .floating-card.hero-reveal-ready {
   opacity: 0;
-  transform: translateY(18px);
-  animation: hero-line-rise .48s cubic-bezier(.22, .61, .36, 1) both;
+  transform: translateY(14px);
+  animation: hero-line-rise .35s cubic-bezier(.22, .61, .36, 1) both;
   animation-delay: var(--hero-delay, 0s);
 }
 
 @keyframes hero-line-rise {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(12px);
   }
 
   to {
