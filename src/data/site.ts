@@ -16,7 +16,7 @@ export const site = {
     "https://www.doctoralia.com.br/pedro-zvir/nutricionista/novo-hamburgo#address-id=1845870&is-online-only=false&filters%5Bdiseases%5D%5B%5D=5368",
   linkedin: "https://br.linkedin.com/in/pedro-zvir-4072221ba",
   hours: [
-    { days: "Segunda a sexta", time: "09:00\u201319:00" },
+    { days: "Segunda a sexta", time: "09:00 às 19:00" },
     { days: "S\u00e1bado e domingo", time: "Fechado" },
   ],
   googleProfile:
@@ -42,7 +42,7 @@ export const site = {
     titleHighlight: "Pedro Zvir",
     tagline: "Estrat\u00e9gias que fazem sentido para a sua realidade.",
     description:
-      "Acompanhamento baseado em evid\u00eancias para melhorar sua alimenta\u00e7\u00e3o, composi\u00e7\u00e3o corporal e desempenho esportivo \u2014 sem dietas imposs\u00edveis de manter.",
+      "Acompanhamento baseado em evidências para melhorar sua alimentação, composição corporal e desempenho esportivo. Sem dietas impossíveis de manter.",
   },
   about: {
     eyebrow: "Ol\u00e1, eu sou o Pedro!",
@@ -138,7 +138,7 @@ export const testimonials: {
 export const locations = [
   {
     city: "Novo Hamburgo",
-    address: "R. Bento Gon\u00e7alves, 2310 - Sl 42",
+    address: "R. Bento Gonçalves, 2310, Sl 42",
     district: "Centro \u00b7 Novo Hamburgo/RS \u00b7 CEP 93510-018 \u00b7 Plus Code 8V7C+HV",
     type: "Presencial \u00b7 Particular",
   },
@@ -147,7 +147,7 @@ export const locations = [
 export const faqs = [
   [
     "Onde acontecem as consultas presenciais?",
-    "Os atendimentos acontecem na R. Bento Gon\u00e7alves, 2310 - Sala 42, Centro, Novo Hamburgo/RS, CEP 93510-018.",
+    "Os atendimentos acontecem na R. Bento Gonçalves, 2310, Sala 42, Centro, Novo Hamburgo/RS, CEP 93510-018.",
   ],
   [
     "Como fa\u00e7o para agendar?",
